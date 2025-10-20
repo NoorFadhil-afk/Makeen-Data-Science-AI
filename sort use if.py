@@ -1,14 +1,14 @@
 #sort numbers use for loop
-numbers = [1, 16, 9, 4]
+num = [1, 16, 9, 4]
 while True:
     value = False
-    for i in range(len(numbers) - 1):
-        if numbers[i] > numbers[i + 1]:
-            x = numbers[i]
-            numbers[i] = numbers[i + 1]
-            numbers[i + 1] = x
+    for i in range(len(num) - 1):
+        if num[i] > num[i + 1]:
+            x = num[i]
+            num[i] = num[i + 1]
+            num[i + 1] = x
             value = True
     if not value:
          break
-print(numbers)
+print(num)
         
