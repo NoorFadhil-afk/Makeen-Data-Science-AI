@@ -1,8 +1,20 @@
 #linear search
-numbers = [1, 16, 9, 4]
-target = int(input("Enter the number: "))
-if target in numbers:
-    print("The element is in the list"+ str(numbers.index(target)))
-else:
-    print("The element is not in the list")
-             
+numbers = [2, 12, 5, 3, 20, 13]
+target = int(input("Enter your target: "))
+position = -1
+
+for i in range(len(numbers)):
+    if target == numbers[i]:
+        position = i
+   
+    else:
+        position = -1
+
+    print(position)   
+print("The target is on position: ", position)
+
+
+
+
+
+    
